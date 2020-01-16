@@ -3,6 +3,7 @@
 #dont forget to run  chmod 700 UbuntuBastion.sh
 sudo apt-get update && sudo apt-get upgrade -y
 sudo useradd -m rdp
+sudo usermod -aG sudo rdp
 echo "rdp:password" | sudo chpasswd
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install xrdp -y 

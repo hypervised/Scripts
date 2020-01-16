@@ -1,6 +1,6 @@
 #!/bin/bash -e
-#Ubuntu Bastion Script
-#dont forget to run  chmod 700 UbuntuBastion.sh
+#Ubuntu BAstion SCript
+#dont forget to run  chmod 700
 sudo apt-get update && sudo apt-get upgrade -y
 sudo useradd -m rdp
 sudo usermod -aG sudo rdp

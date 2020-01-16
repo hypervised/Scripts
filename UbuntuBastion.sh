@@ -1,8 +1,9 @@
 #!/bin/bash -e
-#Ubuntu BAstion SCript
-#dont forget to run  chmod 555 K8S_Master.sh
+#Ubuntu Bastion Script
+#dont forget to run  chmod 700 UbuntuBastion.sh
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install ubuntu-desktop -y
+sudo useradd -m rdp
+echo "rdp:password" | sudo chpasswd
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install xrdp -y 
 sudo apt-get update && sudo apt-get upgrade -y
